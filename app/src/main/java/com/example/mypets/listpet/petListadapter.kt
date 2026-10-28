@@ -10,7 +10,7 @@ import com.example.mypets.databinding.OnepetcartBinding
 
 class petListadapter(val listener: Listener): RecyclerView.Adapter<petListadapter.Petholder>() {
 
-    val petlist = ArrayList<pet>()
+    var petlist: List<InfoPet> = emptyList()
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -32,15 +32,17 @@ class petListadapter(val listener: Listener): RecyclerView.Adapter<petListadapte
     class Petholder(item: View): RecyclerView.ViewHolder(item){
         val binding = OnepetcartBinding.bind(item)
 
-        fun bind(pet: pet, listener: Listener, position: Int) = with(binding){
+        fun bind(pet: InfoPet, listener: Listener, position: Int) = with(binding){
 
 
             binding.apply{
-                petimage.setImageResource(pet.imageID)
+                petimage.setImageBitmap(pet.image)
 
-                namepet.text = pet.Info.toString()
+                namepet.text = pet.name
 
-                petinfo.text = pet.title.toString()
+                petinfo.text = pet.typePet
+
+
 
 
             }
@@ -49,9 +51,13 @@ class petListadapter(val listener: Listener): RecyclerView.Adapter<petListadapte
         }
 
     }
+    fun addPet(pet: List<InfoPet>){
+        petlist = pet
+        notifyDataSetChanged()
+    }
     interface Listener{
 
-        fun oneClick(pet: pet,position: Int)
+        fun oneClick(pet: InfoPet,position: Int)
 
     }
 

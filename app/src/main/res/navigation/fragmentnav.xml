@@ -18,5 +18,20 @@
         android:id="@+id/petsListMain"
         android:name="com.example.mypets.listpet.PetsListMain"
         android:label="fragment_pets_list_main"
-        tools:layout="@layout/fragment_pets_list_main" />
+        tools:layout="@layout/fragment_pets_list_main" >
+        <action
+            android:id="@+id/action_petsListMain_to_addNewPet"
+            app:destination="@id/addNewPet" />
+        <action
+            android:id="@+id/action_petsListMain_to_registrationFragmentMain"
+            app:destination="@id/registrationFragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewPet"
+        android:name="com.example.mypets.listpet.addNewPet"
+        android:label="addNewPet" >
+        <action
+            android:id="@+id/action_addNewPet_to_petsListMain"
+            app:destination="@id/petsListMain" />
+    </fragment>
 </navigation>
