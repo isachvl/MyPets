@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentnav"
+    app:startDestination="@id/registrationFragmentMain">
+
+    <fragment
+        android:id="@+id/registrationFragmentMain"
+        android:name="com.example.mypets.Registration.RegistrationFragmentMain"
+        android:label="fragment_registration_main"
+        tools:layout="@layout/fragment_registration_main" >
+        <action
+            android:id="@+id/action_registrationFragmentMain_to_petsListMain"
+            app:destination="@id/petsListMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/petsListMain"
+        android:name="com.example.mypets.listpet.PetsListMain"
+        android:label="fragment_pets_list_main"
+        tools:layout="@layout/fragment_pets_list_main" />
+</navigation>

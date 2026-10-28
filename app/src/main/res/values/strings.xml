@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">MyPets</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="singIn">Sing In</string>
+    <string name="registration">Registration</string>
+    <string name="register">Register</string>
+    <string name="HelloNewUser">Hello</string>
+    <string name="Password">Password</string>
+    <string name="RepeatPassword">Repeat Password</string>
+    <string name="Email">Email</string>
+    <string name="FirstName">First Name</string>
+    <string name="SecondName">Second Name</string>
+    <string name="addImage">Add Image</string>
+    <string name="addPet">Add Pet</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="pet_birth_date">Date of Birth</string>
+    <string name="pet_type">Animal Type</string>
+    <string name="pet_breed">Breed</string>
+    <string name="pet_age">Age</string>
+    <string name="pet_gender">Sex</string>
+    <string name="pet_male">Male</string>
+    <string name="pet_female">Female</string>
+    <!-- Проверка email -->
+    <string name="error_email">Invalid email address</string>
+
+    <!-- Проверка пароля -->
+    <string name="error_password_length">Password must contain at least 8 characters</string>
+    <string name="error_password_digit">Add at least one digit</string>
+    <string name="error_password_uppercase">Add at least one uppercase letter</string>
+    <string name="error_password_match">Passwords do not match</string>
+    <string name="error_password_name_empty">Enter your password</string>
+
+    <!-- Проверка имени и фамилии -->
+    <string name="error_first_name_empty">Enter your first name</string>
+    <string name="error_first_name_length">First name must contain at least 2 characters</string>
+    <string name="error_second_name_empty">Enter your last name</string>
+    <string name="error_second_name_length">Last name must contain at least 2 characters</string>
+
+
+
+    <!-- ошибки от файр байс -->
+    <string name="firebase_error_weak_password">Password is too weak. Please choose a stronger password.</string>
+    <string name="firebase_error_email_exists">An account with this email already exists.</string>
+    <string name="firebase_error_invalid_credentials">Incorrect email or password.</string>
+    <string name="firebase_error_invalid_email">Please enter a valid email address.</string>
+    <string name="firebase_error_too_many_requests">Too many attempts. Please try again later.</string>
+    <string name="firebase_error_network">No internet connection. Please check your connection.</string>
+    <string name="firebase_error_permission">Access denied. Please try again or contact support.</string>
+    <string name="firebase_error_unavailable">The service is temporarily unavailable. Please try again later.</string>
+    <string name="firebase_error_timeout">The request took too long. Please try again.</string>
+    <string name="firebase_error_firestore">Unable to save your data. Please try again.</string>
+    <string name="firebase_error_unknown">Something went wrong. Please try again.</string>
+</resources>

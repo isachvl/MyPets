@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "568638920851",
+    "project_id": "mypets-4f4de",
+    "storage_bucket": "mypets-4f4de.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568638920851:android:efd72e99f8f6ab8bcf9566",
+        "android_client_info": {
+          "package_name": "com.example.mypets"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn4pFxE7CecPL0ZXMaBygsHh6zLm0zn1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

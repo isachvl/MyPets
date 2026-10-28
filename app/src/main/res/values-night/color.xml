@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brow">#FBEEDA</color>
+    <color name="background">#100B00</color>
+    <color name="textcolor">#E4BEAC</color>
+    <color name="textcolorbuttom">#503000</color>
+    <color name="RedError">#FF0000</color>
+    <color name="edittextBackgroud">#7E5648</color>
+
+    </resources>

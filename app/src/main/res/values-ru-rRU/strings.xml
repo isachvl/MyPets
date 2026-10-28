@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мои питомцы</string>
+    <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
+    <string name="singIn">Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="HelloNewUser">Привет</string>
+    <string name="Password">Пароль</string>
+    <string name="register">Зарегестрироваться</string>
+    <string name="RepeatPassword">Повторите пароль</string>
+    <string name="Email">Почта</string>
+    <string name="FirstName">Имя</string>
+    <string name="SecondName">Фамилия</string>
+    <string name="addImage">Добавить Изображение</string>
+    <string name="addPet">Добавить питомнца</string>
+    <string name="pet_name">Кличка</string>
+    <string name="pet_birth_date">Дата рождения</string>
+    <string name="pet_type">Вид животного</string>
+    <string name="pet_breed">Порода</string>
+    <string name="pet_age">Возраст</string>
+    <string name="pet_gender">Пол</string>
+    <string name="pet_male">Самец</string>
+    <string name="pet_female">Самка</string>
+    <!-- Проверка email -->
+    <string name="error_email">Некорректный адрес электронной почты</string>
+
+    <!-- Проверка пароля -->
+    <string name="error_password_length">Пароль должен содержать минимум 8 символов</string>
+    <string name="error_password_digit">Добавьте хотя бы одну цифру</string>
+    <string name="error_password_uppercase">Добавьте хотя бы одну заглавную букву</string>
+    <string name="error_password_match">Пароли не совпадают</string>
+    <string name="error_password_name_empty">Введите Пароль</string>
+
+    <!-- Проверка имени и фамилии -->
+    <string name="error_first_name_empty">Введите имя</string>
+
+    <string name="error_first_name_length">Имя должно содержать минимум 2 символа</string>
+    <string name="error_second_name_empty">Введите фамилию</string>
+    <string name="error_second_name_length">Фамилия должна содержать минимум 2 символа</string>
+
+    <!-- ошибки от файр байс -->
+    <string name="firebase_error_weak_password">Слишком простой пароль. Придумайте более надёжный.</string>
+    <string name="firebase_error_email_exists">Аккаунт с такой почтой уже существует.</string>
+    <string name="firebase_error_invalid_credentials">Неверная почта или пароль.</string>
+    <string name="firebase_error_invalid_email">Введите корректный адрес электронной почты.</string>
+    <string name="firebase_error_too_many_requests">Слишком много попыток. Попробуйте позже.</string>
+    <string name="firebase_error_network">Нет подключения к интернету. Проверьте соединение.</string>
+    <string name="firebase_error_permission">Доступ запрещён. Попробуйте ещё раз или обратитесь в поддержку.</string>
+    <string name="firebase_error_unavailable">Сервис временно недоступен. Попробуйте позже.</string>
+    <string name="firebase_error_timeout">Превышено время ожидания. Попробуйте ещё раз.</string>
+    <string name="firebase_error_firestore">Не удалось сохранить данные. Попробуйте ещё раз.</string>
+    <string name="firebase_error_unknown">Что-то пошло не так. Попробуйте ещё раз.</string>
+</resources>
