@@ -1,26 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="log_out_of_account">Выйти из аккаунта</string>
+    <string name="password_old">Введите старый пароль</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="new_password2">Повторите новый пароль</string>
     <string name="app_name">Мои питомцы</string>
     <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
     <string name="singIn">Войти</string>
     <string name="registration">Регистрация</string>
     <string name="HelloNewUser">Привет</string>
-    <string name="Password">Пароль</string>
+    <string name="exit_account_title">Выход из аккаунта</string>
+    <string name="exit_account_message">Вы уверены, что хотите выйти из аккаунта?</string>
+    <string name="Password">Напишите пароль</string>
     <string name="register">Зарегестрироваться</string>
     <string name="RepeatPassword">Повторите пароль</string>
     <string name="Email">Почта</string>
     <string name="FirstName">Имя</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="save_parameters">Сохранить изменение?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="sure_exit">Вы уверены, что хотите выйти ?</string>
+    <string name="success">Успех!</string>
     <string name="SecondName">Фамилия</string>
     <string name="addImage">Добавить Изображение</string>
     <string name="addPet">Добавить питомнца</string>
     <string name="pet_name">Кличка</string>
     <string name="pet_birth_date">Дата рождения</string>
+    <string name="error_password_letter">Добавьте хотя бы одну букву</string>
     <string name="pet_type">Вид животного</string>
     <string name="pet_breed">Порода</string>
     <string name="pet_age">Возраст</string>
     <string name="pet_gender">Пол</string>
     <string name="pet_male">Самец</string>
+    <string name="save_setting">Сохранить данный</string>
     <string name="pet_female">Самка</string>
+    <string name="settingacc">Настройки аккаунта</string>
+    <string name="edit">Редактировать</string>
+    <string name="back">Назад</string>
+    <string name="photo_title">Добавить фотографию</string>
+    <string name="photo_camera">Сделать фото</string>
+    <string name="photo_gallery">Выбрать из галереи</string>
+    <string name="user_not_authorized">Пользователь не авторизован</string>
+    <string name="enter_email">Введите почту</string>
+    <string name="password_too_short">Пароль должен содержать минимум 6 символов</string>
+    <string name="user_updated">Данные сохранены</string>
+    <string name="user_confirm_email">Данные сохранены. Подтвердите новую почту по ссылке в письме</string>
+    <string name="user_update_error">Ошибка обновления. Часть изменений могла сохраниться</string>
+
     <!-- Проверка email -->
     <string name="error_email">Некорректный адрес электронной почты</string>
 

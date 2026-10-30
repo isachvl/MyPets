@@ -1,5 +1,6 @@
 package com.example.mypets.Registration
 
+import android.graphics.Bitmap
 
 
 data class AuthUser(
@@ -8,6 +9,7 @@ data class AuthUser(
     val secondName: String?,
     val email: String,
     val password: String,
+
 
 
 )

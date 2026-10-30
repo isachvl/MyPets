@@ -36,8 +36,14 @@ class petListadapter(val listener: Listener): RecyclerView.Adapter<petListadapte
 
 
             binding.apply{
-                petimage.setImageBitmap(pet.image)
+                if (pet.image == null){
 
+                    petimage.setImageResource(R.drawable.peticon)
+
+                }
+                else {
+                    petimage.setImageBitmap(pet.image)
+                }
                 namepet.text = pet.name
 
                 petinfo.text = pet.typePet

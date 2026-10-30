@@ -1,12 +1,20 @@
 <resources>
+
     <string name="app_name">MyPets</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="log_out_of_account">Log out of account</string>
+    <string name="password_old">Enter your old password</string>
+    <string name="new_password">New Password</string>
+    <string name="new_password2">Repeat new Password</string>
+    <string name="change_password">Сhange password</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="singIn">Sing In</string>
     <string name="registration">Registration</string>
     <string name="register">Register</string>
     <string name="HelloNewUser">Hello</string>
-    <string name="Password">Password</string>
+    <string name="Password">Write password</string>
+    <string name="exit_account_title">Sign out</string>
+    <string name="exit_account_message">Are you sure you want to sign out of your account?</string>
     <string name="RepeatPassword">Repeat Password</string>
     <string name="Email">Email</string>
     <string name="FirstName">First Name</string>
@@ -17,10 +25,31 @@
     <string name="pet_birth_date">Date of Birth</string>
     <string name="pet_type">Animal Type</string>
     <string name="pet_breed">Breed</string>
+    <string name="error_password_letter">Add at least one letter</string>
     <string name="pet_age">Age</string>
+    <string name="success">Success</string>
     <string name="pet_gender">Sex</string>
+    <string name="sure_exit">Are you sure you want to exit?</string>
+
     <string name="pet_male">Male</string>
     <string name="pet_female">Female</string>
+    <string name="save_setting">Save Setting</string>
+    <string name="settingacc">setting account</string>
+    <string name="edit">Edit</string>
+    <string name="save_parameters">Save Parameters?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="back">Back</string>
+    <string name="photo_title">Add a photo</string>
+    <string name="photo_camera">Take a photo</string>
+    <string name="photo_gallery">Choose from gallery</string>
+    <string name="user_not_authorized">You are not signed in</string>
+    <string name="enter_email">Enter your email address</string>
+    <string name="password_too_short">Password must contain at least 6 characters</string>
+    <string name="user_updated">Changes saved</string>
+    <string name="user_confirm_email">Changes saved. Confirm your new email address using the link in the email</string>
+    <string name="user_update_error">Update failed. Some changes may have been saved</string>
+
     <!-- Проверка email -->
     <string name="error_email">Invalid email address</string>
 
@@ -36,7 +65,6 @@
     <string name="error_first_name_length">First name must contain at least 2 characters</string>
     <string name="error_second_name_empty">Enter your last name</string>
     <string name="error_second_name_length">Last name must contain at least 2 characters</string>
-
 
 
     <!-- ошибки от файр байс -->

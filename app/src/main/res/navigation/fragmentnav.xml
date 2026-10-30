@@ -25,6 +25,12 @@
         <action
             android:id="@+id/action_petsListMain_to_registrationFragmentMain"
             app:destination="@id/registrationFragmentMain" />
+        <action
+            android:id="@+id/action_petsListMain_to_settinguser"
+            app:destination="@id/settinguser" />
+        <action
+            android:id="@+id/action_petsListMain_to_settinguser2"
+            app:destination="@id/settinguser" />
     </fragment>
     <fragment
         android:id="@+id/addNewPet"
@@ -32,6 +38,15 @@
         android:label="addNewPet" >
         <action
             android:id="@+id/action_addNewPet_to_petsListMain"
+            app:destination="@id/petsListMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/settinguser"
+        android:name="com.example.mypets.listpet.settinguser"
+        android:label="fragment_settinguser"
+        tools:layout="@layout/fragment_settinguser" >
+        <action
+            android:id="@+id/action_settinguser_to_petsListMain"
             app:destination="@id/petsListMain" />
     </fragment>
 </navigation>

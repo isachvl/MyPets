@@ -8,5 +8,6 @@
     <color name="textcolorbuttom">#FBEEDA</color>
     <color name="RedError">#FF0000</color>
     <color name="edittextBackgroud">#FFEDE3</color>
+    <color name="backhrader">#85502A</color>
 
 </resources>

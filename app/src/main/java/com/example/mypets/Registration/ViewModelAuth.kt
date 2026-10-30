@@ -1,8 +1,11 @@
 package com.example.mypets.Registration
 
 import android.R
+import android.graphics.Bitmap
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.mypets.listpet.userinfo
 
 import dagger.Module
 import dagger.Provides
@@ -15,9 +18,31 @@ import jakarta.inject.Inject
 class ViewModelAuth @Inject constructor(private val authRepository: AuthRepository): ViewModel() {
 
 
-
+    val image = MutableLiveData<Bitmap>()
 
     val mode = MutableLiveData(AuthMode.LOGIN)
+    private val _user = MutableLiveData<userinfo>()
+    val user: LiveData<userinfo> = _user
+
+    suspend fun updateUser(data: AuthUser): Int {
+        return authRepository.updateUser(data)
+    }
+    fun reauthenticate(
+        oldPassword: String,
+        onResult: (Boolean, String?) -> Unit
+    ) {
+        authRep.reauthenticate(oldPassword) { success, error ->
+            onResult(success, error)
+        }
+    }
+    fun changePasswordr(
+        password: String,
+        onResult: (Boolean, String) -> Unit
+    ) {
+        authRepository.changePassword(password) { success, message ->
+            onResult(success, message)
+        }
+    }
 
 
     fun showREgistration(){
@@ -27,6 +52,15 @@ class ViewModelAuth @Inject constructor(private val authRepository: AuthReposito
         mode.value= AuthMode.LOGIN
     }
 
+
+
+    private val authRep = AuthRepository()
+
+    fun loadUser() {
+        authRep.takeUser { userInfo ->
+            _user.value = userInfo
+        }
+    }
 
     fun authrepos(
         authUser: AuthUser,

@@ -39,6 +39,10 @@ android {
 }
 
 dependencies {
+    implementation("com.airbnb.android:lottie:6.6.7")
+    implementation("androidx.room:room-ktx:2.8.5")
+    ksp("androidx.room:room-compiler:2.8.5")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.11.0")
     implementation("com.google.dagger:hilt-android:2.59.2")
     implementation(libs.androidx.cardview)
     implementation(libs.androidx.navigation.fragment.ktx)

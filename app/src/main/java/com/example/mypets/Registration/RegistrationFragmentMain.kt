@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navOptions
 import com.example.mypets.databinding.FragmentRegistrationMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
@@ -60,12 +61,17 @@ class RegistrationFragmentMain : Fragment() {
                         password = passwordText.text.toString()
                     )
 
+                    showLoading()
+
                     model.authrepos(user){
                         success, error ->
+
                         if (success) {
+                            hideLoading()
                             SuccessRegOpenFrag()
                         }
                         else if (error != null) {
+                            hideLoading()
                             binding.textError.visibility = View.VISIBLE
 
                             binding.textError.text= getString(error)
@@ -91,7 +97,16 @@ class RegistrationFragmentMain : Fragment() {
 
     private fun SuccessRegOpenFrag(){
 
-        findNavController().navigate(R.id.action_registrationFragmentMain_to_petsListMain)
+        findNavController().navigate(
+            R.id.action_registrationFragmentMain_to_petsListMain,
+            null,
+            navOptions {
+                popUpTo(R.id.registrationFragmentMain) {
+                    inclusive = true
+                }
+                launchSingleTop = true
+            }
+        )
 
     }
 
@@ -153,7 +168,15 @@ class RegistrationFragmentMain : Fragment() {
 
         return errors.values.all { it == null }
     }
+    private fun showLoading() {
+        binding.loadingOverlay?.visibility = View.VISIBLE
+        binding.loadingAuth?.playAnimation()
+    }
 
+    private fun hideLoading() {
+        binding.loadingAuth?.cancelAnimation()
+        binding.loadingOverlay?.visibility = View.GONE
+    }
 
 
 }

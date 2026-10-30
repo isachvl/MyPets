@@ -27,31 +27,10 @@ import java.util.Locale
 
 class addNewPet : Fragment() {
     private var selectedImage: Bitmap? = null
-
-
-    private val cameralauncher = registerForActivityResult(ActivityResultContracts.TakePicturePreview()){
-            bitmap ->
-        if (bitmap != null){
-            selectedImage = bitmap
-            binding.imagepet.setImageBitmap(bitmap)
-
-        }
+    private val photoPicker = takePhoto(this) { bitmap ->
+        selectedImage = bitmap
+        binding.imagepet.setImageBitmap(bitmap)
     }
-
-    private val galleryLauncher =
-        registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
-            if (uri != null) {
-                val bitmap = requireContext().contentResolver
-                    .openInputStream(uri)?.use { stream ->
-                        BitmapFactory.decodeStream(stream)
-                    }
-
-                if (bitmap != null) {
-                    selectedImage = bitmap
-                    binding.imagepet.setImageBitmap(bitmap)
-                }
-            }
-        }
 
     lateinit var binding: AddNewpetsBinding
     private val model: viewmodelNewpets by activityViewModels()
@@ -157,16 +136,7 @@ class addNewPet : Fragment() {
 
 
         binding.addimage.setOnClickListener {
-            AlertDialog.Builder(requireContext())
-                .setTitle("Добавить фотографию")
-                .setItems(arrayOf("Сделать фото", "Выбрать из галереи")) { _, which ->
-
-                    when (which) {
-                        0 -> cameralauncher.launch(null)
-                        1 -> galleryLauncher.launch("image/*")
-                    }
-                }
-                .show()
+            photoPicker.addphoto()
         }
 
 

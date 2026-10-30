@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageuser"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/dog" />
+
+            <Button
+                android:id="@+id/addimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/brow"
+                android:text="@string/addImage"
+                android:textColor="@color/textcolorbuttom" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="48dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textfname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/textcolor"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/textcolor"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/textcolor"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/FirstName"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/emailtext"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/Email"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/passwordedittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/password_old"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:password="true"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/passwordnew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/new_password"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/passwordnew2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/new_password2"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:visibility="gone" />
+
+            <EditText
+
+                android:id="@+id/secondnametext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/SecondName"
+                android:inputType="number"
+                android:maxLength="10"
+                android:minHeight="48dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/editbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/brow"
+                android:text="@string/edit"
+                android:textColor="@color/textcolorbuttom" />
+
+            <Button
+                android:id="@+id/exitAcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/brow"
+                android:text="@string/log_out_of_account"
+                android:textColor="@color/textcolorbuttom" />
+
+            <Button
+                android:id="@+id/passwordsetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/brow"
+                android:text="@string/change_password"
+                android:textColor="@color/textcolorbuttom" />
+
+            <Button
+                android:id="@+id/backbuttooon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/brow"
+                android:text="@string/back"
+                android:textColor="@color/textcolorbuttom" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
